@@ -1,0 +1,180 @@
+*{ /*Resetando todos css do navegador*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: /*#515a92*/#3c4896;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased; /*Deixa a font mais bonita*/
+}
+
+.header, .temperatura-atual, .porsol-nascersol {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* HEADER*/
+
+.header {
+    padding: 0 30PX;
+    /*background: ; Muda cor do fundo*/
+    /*height: ; /*Altura*/
+}
+
+.header__barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.header__entrada {
+    border: none;
+    background: #dde0f5;
+    width: 100%; /* Largura */
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 10px 0 0 10px;
+    appearance: none; /* Resolve problema para Iphone(beleza) */
+    margin-right: -15px;
+}
+
+.header__botao {
+    cursor: pointer;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 100%;
+    background: #393939;
+    color: #f3f4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, a) 0px 8px 16px -8px;;
+
+}
+
+.header__botao:hover {
+    filter: brightness(1.25);
+}
+
+.header__data-atual,
+.header__nome-cidade {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.header__data-atual {
+    color: #a2a2be;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.header__nome-cidade {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* Current Temperature */
+
+.temperatura-atual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.temperatura-atual__clima-icon {
+    width: 125px;
+    margin-top: 15px;
+}
+
+.temperatura-atual__previsao:first-letter {
+    text-transform: uppercase;
+}
+
+.temperatura-atual__previsao {
+    color: #e47b19;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.temperatura-atual__rotulo {
+    margin-top: 20px;
+    color: #beb1a2;
+}
+
+.temperatura-atual__temperatura {
+    font-size:  24px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.logo__eficaz {
+    width: 120px;
+    height: 120px;
+}
+
+/* Bottom Container */
+
+.bottom-container {
+    background: #dde0f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, a) 0px 1px 3px -1px;;
+}
+
+.detalhes-temperatura {
+    display: flex;
+    margin-top: 30px;
+}
+
+.detalhes-temperatura__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #a2a2be;
+}
+
+.detalhes-temperatura__item:last-child {
+    border: none;
+}
+
+.detalhes-temperatura__natur {
+    color: #373741;
+}
+
+.detalhes-temperatura__valor,
+.sunset-sunrise__valor    {
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+/* Sun */
+
+.porsol-nascersol {
+    display: flex;
+    margin: 30px auto;
+}
+
+.porsol-nascersol__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
